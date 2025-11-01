@@ -1,0 +1,27 @@
+//C_PUSH constant 32766
+@32766
+D=A
+@SP
+M=M+1
+A=M-1
+M=D
+//C_PUSH constant 32766
+@32766
+D=A
+@SP
+M=M+1
+A=M-1
+M=D
+//gt
+@SP
+AM=M-1
+D=M
+A=A-1
+D=M-D
+M=0
+@LOGIC_8LOOP
+D;JLT
+@SP
+A=M-1
+M=-1
+(LOGIC_8LOOP)
